@@ -1,0 +1,144 @@
+/* Optimization for a view on desktop at 1440px. See 'style-guide.md' */
+
+
+
+/* MEDIA QUERIES ******************************************************* */
+
+@media screen and (min-width:576px) {
+
+    /* HEADER ******************************************************* */
+
+    /* Navigation Top ********************** */
+
+    label {
+        display: none;
+    }
+
+    #top-left {
+        width: 35%;
+    }
+
+
+
+    #top-left ul {
+        transform: translateX(0vw);
+        flex-direction: row;
+        position: relative;
+        height: 0;
+        top: 0;
+        width: 0;
+        color: rgb(100, 100, 100);
+        font-size: 13px;
+        border: 0;
+    }
+
+    #top-left ul li {
+        width: 50vw;
+    }
+
+    #top-left ul li:hover {
+        color: rgb(255, 125, 26);
+        background-color: white;
+    }
+
+
+    /* Image Header ********************** */
+
+    #img-header {
+        background-image: url(../img/skateboarder.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 40vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 70vw;
+        margin: auto;
+    }
+
+    h1 {
+        color: rgb(255, 125, 26);
+        padding-right: 30px;
+        padding-bottom: 40px;
+        font-size: 70px;
+        font-weight: 600;
+    }
+
+
+    /* MAIN ******************************************************* */
+
+
+    main {
+        width: 70vw;
+        margin: auto;
+    }
+
+    section {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    section img {
+        border-radius: 10px;
+    }
+
+
+
+    #shoes-01,
+    #shoes-02,
+    #shoes-03 {
+        width: 40%;
+    }
+
+
+
+    #description-01,
+    #description-03 {
+        margin: 0;
+        margin-left: 20px;
+        width: 100%;
+    }
+
+    #description-02 {
+        margin: 0;
+        margin-right: 20px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #price {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+
+    .number-input input {
+        font-size: 15px;
+        height: 4vh;
+    }
+
+
+    .add-cart {
+        padding: 10px 0;
+    }
+
+
+    #sneaker-01 {
+        margin-top: 30px;
+    }
+
+    #sneaker-02 {
+        flex-direction: row-reverse;
+        margin-top: 150px;
+    }
+
+    #sneaker-03 {
+        margin-top: 150px;
+    }
+
+}
